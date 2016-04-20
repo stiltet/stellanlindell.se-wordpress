@@ -6,18 +6,23 @@ node_modules
 *.log
 .DS_Store
 .htaccess
-www/sitemap.xml
-www/sitemap.xml.gz
-www/wp-config.php
-www/wp-content/advanced-cache.php
-www/wp-content/backup-db/
-www/wp-content/backups/
-www/wp-content/blogs.dir/
-www/wp-content/cache/
-www/wp-content/upgrade/
-www/wp-content/uploads/
-www/wp-content/wp-cache-config.php
-www/readme.html
-www/license.txt
 docs/
 www/.htfsfdfsdfgwyhjyphiphgffdgsset
+
+# This is a template .gitignore file for git-managed WordPress projects.
+#
+# Fact: you don't want WordPress core files, or your server-specific
+# configuration files etc., in your project's repository. You just don't.
+#
+# Solution: stick this file up your repository root (which it assumes is
+# also the WordPress root directory) and add exceptions for any plugins,
+# themes, and other directories that should be under version control.
+#
+# See the comments below for more info on how to add exceptions for your
+# content. Or see git's documentation for more info on .gitignore files:
+# http://kernel.org/pub/software/scm/git/docs/gitignore.html
+ 
+# Ignore everything in the root except the "wp-content" directory.
+/www/*
+!www/.gitignore
+!www/wp-content/
