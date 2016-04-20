@@ -26,3 +26,4 @@ www/.htfsfdfsdfgwyhjyphiphgffdgsset
 /www/*
 !www/.gitignore
 !www/wp-content/
+!www/index.html
